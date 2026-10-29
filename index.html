@@ -401,10 +401,10 @@ const DEFAULT_PLAN = {
   "marcarEleccion": true,
   "objetivos": {
     "entreno": {
-      "kcal": 1880,
-      "p": 123,
+      "kcal": 1930,
+      "p": 135,
       "hc": 193,
-      "g": 63
+      "g": 64
     }
   },
   "pasosObjetivo": 12000,
@@ -831,6 +831,60 @@ const DEFAULT_PLAN = {
       1.7,
       "1 cazo raso"
     ],
+    "slim40": [
+      "Slim Woman Protein",
+      "40 g",
+      150,
+      30,
+      2.4,
+      1.9,
+      "2 cazos"
+    ],
+    "yogslim": [
+      "Yogur natural con 1 cazo de Slim Woman Protein",
+      "125 g + 20 g",
+      149,
+      19.4,
+      6.7,
+      4.9,
+      "1 yogur + 1 cazo"
+    ],
+    "colageno10": [
+      "Collagen Beauty",
+      "10 g",
+      35,
+      8.4,
+      0.3,
+      0,
+      "1 cazo"
+    ],
+    "multivit1": [
+      "Multivit",
+      "1 comprimido",
+      0,
+      0,
+      0,
+      0,
+      "1 comprimido"
+    ],
+    "curcuma2": [
+      "Turmeric Curcumin + Bioperine",
+      "2 cápsulas",
+      0,
+      0,
+      0,
+      0,
+      "2 cápsulas"
+    ],
+    "bikini1": [
+      "Bikini Pro",
+      "1 cápsula",
+      0,
+      0,
+      0,
+      0,
+      "1 cápsula"
+    ],
     "leche100": [
       "Leche semidesnatada",
       "100 ml",
@@ -1146,6 +1200,19 @@ const DEFAULT_PLAN = {
         "cremaverd",
         "pimiento"
       ]
+    },
+    {
+      "id": "sup",
+      "nombre": "Suplementos",
+      "icon": "💊",
+      "ids": [
+        "slim40",
+        "yogslim",
+        "colageno10",
+        "multivit1",
+        "curcuma2",
+        "bikini1"
+      ]
     }
   ],
   "sinAporte": [
@@ -1254,6 +1321,24 @@ const DEFAULT_PLAN = {
                 "ops": [
                   "leche100"
                 ]
+              },
+              {
+                "id": "cur",
+                "nombre": "Cúrcuma",
+                "tipo": "one",
+                "ops": [
+                  "curcuma2"
+                ],
+                "nota": "2 cápsulas con el desayuno: necesita la grasa del aceite, el aguacate o los frutos secos"
+              },
+              {
+                "id": "bik",
+                "nombre": "Bikini Pro",
+                "tipo": "one",
+                "ops": [
+                  "bikini1"
+                ],
+                "nota": "1 cápsula con un vaso de agua"
               }
             ]
           },
@@ -1269,7 +1354,8 @@ const DEFAULT_PLAN = {
                 "ops": [
                   "skyr150",
                   "yogurprot",
-                  "batido250"
+                  "batido250",
+                  "yogslim"
                 ]
               },
               {
@@ -1307,6 +1393,24 @@ const DEFAULT_PLAN = {
                   "cafe",
                   "infusion"
                 ]
+              },
+              {
+                "id": "cur",
+                "nombre": "Cúrcuma",
+                "tipo": "one",
+                "ops": [
+                  "curcuma2"
+                ],
+                "nota": "2 cápsulas con el desayuno: necesita la grasa del aceite, el aguacate o los frutos secos"
+              },
+              {
+                "id": "bik",
+                "nombre": "Bikini Pro",
+                "tipo": "one",
+                "ops": [
+                  "bikini1"
+                ],
+                "nota": "1 cápsula con un vaso de agua"
               }
             ]
           }
@@ -1397,6 +1501,15 @@ const DEFAULT_PLAN = {
                   "cerveza"
                 ],
                 "nota": "mejor sin alcohol, y con la comida, no sola antes"
+              },
+              {
+                "id": "multi",
+                "nombre": "Multivitamínico",
+                "tipo": "one",
+                "ops": [
+                  "multivit1"
+                ],
+                "nota": "1 comprimido con la comida, no con el café: lleva hierro y se absorbe mejor con la fruta del postre"
               }
             ]
           },
@@ -1471,6 +1584,15 @@ const DEFAULT_PLAN = {
                   "cerveza"
                 ],
                 "nota": "mejor sin alcohol"
+              },
+              {
+                "id": "multi",
+                "nombre": "Multivitamínico",
+                "tipo": "one",
+                "ops": [
+                  "multivit1"
+                ],
+                "nota": "1 comprimido con la comida, no con el café: lleva hierro y se absorbe mejor con la fruta del postre"
               }
             ]
           }
@@ -1526,6 +1648,15 @@ const DEFAULT_PLAN = {
                   "avena30",
                   "choco15"
                 ]
+              },
+              {
+                "id": "col",
+                "nombre": "Colágeno",
+                "tipo": "one",
+                "ops": [
+                  "colageno10"
+                ],
+                "nota": "1 cazo en 100 ml de agua, o dentro del batido"
               }
             ]
           },
@@ -1579,6 +1710,15 @@ const DEFAULT_PLAN = {
                   "fruta150",
                   "naranja"
                 ]
+              },
+              {
+                "id": "col",
+                "nombre": "Colágeno",
+                "tipo": "one",
+                "ops": [
+                  "colageno10"
+                ],
+                "nota": "1 cazo en 100 ml de agua, o dentro del batido"
               }
             ]
           },
@@ -1586,6 +1726,7 @@ const DEFAULT_PLAN = {
             "id": "batido",
             "fam": "Dulce",
             "nombre": "Batido",
+            "hasta": "2026-10-28",
             "grupos": [
               {
                 "id": "base",
@@ -1620,6 +1761,58 @@ const DEFAULT_PLAN = {
                   "avena30"
                 ],
                 "nota": "batida dentro, o en copos por encima"
+              }
+            ]
+          },
+          {
+            "id": "batido_sw",
+            "fam": "Dulce",
+            "nombre": "Batido",
+            "desde": "2026-10-29",
+            "grupos": [
+              {
+                "id": "base",
+                "nombre": "Leche",
+                "tipo": "one",
+                "ops": [
+                  "leche250"
+                ]
+              },
+              {
+                "id": "prot",
+                "nombre": "Proteína",
+                "tipo": "one",
+                "ops": [
+                  "slim40"
+                ],
+                "nota": "2 cazos de Slim Woman"
+              },
+              {
+                "id": "fruta",
+                "nombre": "Fruta",
+                "tipo": "one",
+                "ops": [
+                  "platano",
+                  "rojos100"
+                ]
+              },
+              {
+                "id": "hc",
+                "nombre": "Avena",
+                "tipo": "one",
+                "ops": [
+                  "avena30"
+                ],
+                "nota": "batida dentro, o en copos por encima"
+              },
+              {
+                "id": "col",
+                "nombre": "Colágeno",
+                "tipo": "one",
+                "ops": [
+                  "colageno10"
+                ],
+                "nota": "1 cazo en 100 ml de agua, o dentro del batido"
               }
             ]
           }
@@ -1915,13 +2108,14 @@ const DEFAULT_PLAN = {
   "reglas": {
     "equivalencias": [
       "Este plan no es para comer menos: es para comer lo suficiente, con más proteína, y que la fuerza cambie la forma del abdomen y las piernas. Es normal que la báscula apenas se mueva.",
-      "El objetivo del día son unas 1.900 kcal con 120 g de proteína. No hace falta clavarlo: con tus pasos y el spinning, lo que más importa es no quedarse corta.",
+      "El objetivo del día son unas 1.900 kcal con 130 g de proteína. No hace falta clavarlo: con tus pasos y el spinning, lo que más importa es no quedarse corta.",
       "La proteína en cada comida: huevo, carne, pescado, legumbre o lácteo. Es lo que te va a sostener el músculo que quieres marcar.",
       "Hierro: ternera o mejillones, almejas y berberechos 2-3 veces por semana, legumbre 2 veces, con fruta de vitamina C de postre (naranja, kiwi, fresas). El café y el té, lejos de la comida y la cena.",
       "La pasta, el arroz y la quinoa se pesan en seco. La carne y el pescado, en crudo.",
       "1 cucharada de aceite son 10 g y 90 kcal. Échalo con cuchara.",
       "La verdura no se cuenta. Si te hincha, sube la cantidad poco a poco y bebe agua.",
-      "Café, infusiones y agua no cuentan. La cerveza sí: mejor sin alcohol y con la comida."
+      "Café, infusiones y agua no cuentan. La cerveza sí: mejor sin alcohol y con la comida.",
+      "Después de un fin de semana de excesos, el lunes no se compensa: plan normal, agua y tus pasos. La hinchazón de esos días es agua y sal, y se va sola en 2-3 días comiendo como siempre."
     ]
   },
   "recordatorios": [
@@ -1940,9 +2134,58 @@ const DEFAULT_PLAN = {
       ],
       [
         "Cúrcuma",
-        "Coméntale que tomas cúrcuma en cápsulas: en algunas personas puede dificultar la absorción del hierro."
+        "Coméntale que tomas cúrcuma en cápsulas (con pimienta negra): en algunas personas puede dificultar la absorción del hierro. Por eso va en el desayuno y no en la comida, que es donde está el hierro."
+      ],
+      [
+        "Tus suplementos",
+        "Enséñale la lista de suplementos de esta pestaña: el multivitamínico y la proteína llevan hierro, y la pimienta negra de la cúrcuma puede cambiar cómo se absorben algunos medicamentos. Que te confirme que todo encaja con lo que ya tomas."
       ]
     ]
+  },
+  "suplementos": {
+    "nombre": "Tu suplementación",
+    "intro": "Qué tomas y cuándo. Cada suplemento tiene su casilla dentro de la comida que toca: márcala al tomarlo y así no se te olvida.",
+    "items": [
+      {
+        "n": "Multivit",
+        "cuando": "con la comida",
+        "id": "multivit1",
+        "como": "1 comprimido al día. Lleva hierro: con la comida, que tiene fruta de vitamina C de postre, y lejos del café.",
+        "url": "https://tienda.iogenixnutrition.com/vitaminas-y-minerales/9209-multivit-60-tabs-8435569300872.html"
+      },
+      {
+        "n": "Turmeric Curcumin + Bioperine",
+        "cuando": "con el desayuno",
+        "id": "curcuma2",
+        "como": "2 cápsulas con el desayuno, que lleva grasa (aceite, aguacate o frutos secos) para que se absorba. Sustituye a la cúrcuma que ya tomas: una de las dos, no ambas.",
+        "url": "https://tienda.iogenixnutrition.com/healthy-series/9097-turmeric-curcumin-bioperine-8435569306669.html"
+      },
+      {
+        "n": "Slim Woman Protein",
+        "cuando": "merienda o desayuno",
+        "id": [
+          "slim40",
+          "yogslim"
+        ],
+        "como": "2 cazos en el batido de la merienda, o 1 cazo mezclado con un yogur natural en el bol del desayuno. Si un día vas corta de proteína, un batido de 2 cazos con leche es tu mejor tentempié.",
+        "url": "https://tienda.iogenixnutrition.com/nutricion-deportiva/2358-slim-woman-protein.html"
+      },
+      {
+        "n": "Collagen Beauty",
+        "cuando": "en la merienda",
+        "id": "colageno10",
+        "como": "1 cazo (10 g) en 100 ml de agua, o dentro del batido. Todos los días.",
+        "url": "https://tienda.iogenixnutrition.com/nutricion-deportiva/9178-pack-beauty-collagen.html"
+      },
+      {
+        "n": "Bikini Pro",
+        "cuando": "con el desayuno",
+        "id": "bikini1",
+        "como": "1 cápsula con un vaso de agua.",
+        "url": "https://tienda.iogenixnutrition.com/mvp-woman/2359-bikini-pro-8436035250516.html"
+      }
+    ],
+    "pie": "No superes la dosis de cada uno. Si tu médico te pauta hierro u otra medicación nueva, enséñale esta lista."
   },
   "avisoEntreno": [
     "Una idea de estructura",
@@ -3262,6 +3505,16 @@ function renderAjustes(){
     h += `</div>`;
   }
 
+  /* suplementación pautada (opcional por plan) */
+  if(S.plan.suplementos){
+    const SP = S.plan.suplementos;
+    h += `<div class="card"><h2>💊 ${esc(SP.nombre)}</h2>` +
+      (SP.intro?`<div class="muted" style="margin-bottom:6px">${esc(SP.intro)}</div>`:"") +
+      SP.items.map(i=>`<div class="idea"><b>${esc(i.n)} <span style="font-weight:400;color:var(--dim2)">· ${esc(i.cuando)}</span></b><span>${esc(i.como)}${
+        i.url?` <a href="${esc(i.url)}" target="_blank" rel="noopener" style="color:var(--acc)">Ver producto</a>`:""}</span></div>`).join("") +
+      (SP.pie?`<div class="tiny" style="margin-top:8px">${esc(SP.pie)}</div>`:"") + `</div>`;
+  }
+
   if(S.plan.medico){
     h += `<div class="card"><h2>🩺 ${esc(S.plan.medico.nombre)}</h2>` +
       S.plan.medico.items.map(i=>`<div class="idea"><b>${esc(i[0])}</b><span>${esc(i[1])}</span></div>`).join("") +
@@ -3358,6 +3611,16 @@ function generarResumen(){
   L.push(`· Media proteína: ${r0(mp)} g`);
   const dd = regs.map(r=> r.t.kcal ? `${DIAS_SEM[dowNum(r.f)].slice(0,2).toUpperCase()} ${r0(r.t.kcal)}${S.plan.tiposDia?" ("+nombreTipo(r.tipo)+" "+r.obj.kcal+")":""}` : null).filter(Boolean);
   if(dd.length) L.push(`· Por día: ${dd.join(" · ")}`);
+  /* suplementos tomados (los que se marcan dentro de las comidas) */
+  if(S.plan.suplementos && S.plan.suplementos.items.some(i=>i.id)){
+    L.push(""); L.push("*SUPLEMENTOS*");
+    S.plan.suplementos.items.filter(i=>i.id).forEach(i=>{
+      const ids = [].concat(i.id);
+      const n = activos.filter(f=>{ const d=S.log[f]; if(!d||!d.sel) return false;
+        return Object.values(d.sel).some(m=>Object.values(m||{}).some(v=>(Array.isArray(v)?v:[v]).some(x=>ids.includes(x)))); }).length;
+      L.push(`· ${i.n}: ${n}/${activos.length} días`);
+    });
+  }
   L.push("");
   L.push("*PASOS*");
   L.push(pasosArr.length ? `· Media ${r0(mpa).toLocaleString("es-ES")} · objetivo cumplido ${cumplePasos}/${pasosArr.length} días` : "· Sin registros");
